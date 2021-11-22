@@ -4,12 +4,12 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 function obtenerDatos(){
-	var form = document.getElementById('theForm');
-	if (!form.name.value == "MAVO"){
-		return true;
+	if (document.getElementById('name').value.length<=7){
+		alert('Ingrese un nombre de minimo 8 caracteres');
+	} else{
+		alert("Nombre de condiciones normales");
 	}
-	return false;
-}
+} 
 
 (function($) {
 
